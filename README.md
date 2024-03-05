@@ -115,6 +115,7 @@ The five stages of atomic design are:.
 (3)**Organisms** - An organism is a collection of molecules that have been bonded together to form complex individual portions of the design such as a login page, form, nav bar etc.
 
 (4)**Templates** - Templates are the glues that combine the different organisms or individual sections to create a complete design.For example, the search form (organism) can be used as a template in the hero section of our home page to fetch user information. 
+Difference between Templates and Page is basically templates are without data and styles. 
 
 (5)**Pages** - Pages are specific instances of templates that show what a UI looks like with real representative content in place.The page stage is the most concrete stage of atomic design, and it’s important for some rather obvious reasons. After all, this is what users will see and interact with when they visit your experience. 
 
