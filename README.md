@@ -22,6 +22,7 @@ These are the conceptual solutions for the problems
 11) Logs (Treat logs as event streams)
 12) Admin processes (Run admin/management tasks as one-off processes)
 
+Following are the detail explaination of the above 12 factors:
 
 1) Codebase: there should be exactly one codebase for a sevice for many deployments and it will be accessible to the devloping ,testing,an system administration staff.
 For example github.
