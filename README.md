@@ -69,7 +69,8 @@ Release stage: get the build package from the build stage and combines with the 
 
 Run stage: It is like running your app in the execution environment.
 
-6) Processes :
+6)Processes :
+
 The "Processes" factor in the 12 Factor App methodology emphasizes running applications as one or more stateless processes. This means that each process does not retain any state or data between requests. Instead, any data necessary for processing a request is either passed along with the request or stored externally (e.g., in a database).
 
 By running applications as stateless processes, it becomes easier to scale horizontally, which means adding more instances of the application to handle increased traffic.
