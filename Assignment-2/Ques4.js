@@ -5,4 +5,4 @@ function square(number)
    return number * number;
 }
 let number=prompt("Enter the number:");
-console.log(square(ans));
+console.log(square(number));
