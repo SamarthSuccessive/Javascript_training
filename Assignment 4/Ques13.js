@@ -15,7 +15,7 @@ let arr=new Array(max);
 
 for(let i=0;i<inputArray.length;i++)
 {
-    arr[inputArray[i]]=i;
+    arr[inputArray[i]]=i+1;
 }
 console.log(arr);
 
