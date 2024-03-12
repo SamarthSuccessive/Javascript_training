@@ -21,7 +21,7 @@ class Rectangle extends shape{
     }
     getArea()
     {
-        return this.width*this.width;
+        return this.height*this.width;
     }
 
 }

@@ -2,7 +2,6 @@
 
 
 
-// 3.2 Create a class Student that inherits from the Person class and has a property studies. Override the greeting() method to include information about what the student is studying.
 
 class Person{
     name;
@@ -18,12 +17,12 @@ class Person{
     }
     greeting()
     {
-       return "Hi my name is : "+this.name+"\nAge is "+this.age+"\nGender: "+this.gender+"."+"\nInterest: "+this.gender;
-    } 
+      return `Hi my name is : ${this.name} \nAge is ${this.age} \nGender: ${this.gender}\nInterest: ${this.interest}`;
+   } 
     farewell()
     {
-       return "Goodby "+ this.name;
-    }
+      return `Goodby ${this.name}`;
+   }
    }
    
  class Teacher extends Person{
@@ -35,9 +34,16 @@ class Person{
     }
     farewell()
     {
-       return "Goodby "+ this.name+"\nTeachers Taught:"+this.subjectsTaught;
+       let ans="";
+       ans+=`${super.farewell()} \nSubject Taught :\n`;
+      
+       for(let i of this.subjectsTaught)
+       {
+         ans+=`${i}\n`;
+       }
+      return ans;
     }
  }
  
- const teacher1=new Teacher("samarth",22,"male","badminton","programming","English");
+ const teacher1=new Teacher("samarth",22,"male","badminton",["programming","English"]);
  console.log(teacher1.farewell());

@@ -18,13 +18,14 @@ class Person{
     }
     static averageAge(array)
     {
-        let sum=0;
-        let totalpeople=array.length-1;
+       
+        let totalpeople=array.length;
         let result=array.reduce((accumulator,current)=>{
             
-            return accumulator=accumulator+current;
+            return accumulator=accumulator+current.age;
 
         },0);
+        return result/totalpeople;
 
     }
 }
@@ -35,3 +36,4 @@ const person3=new Person("OM","Pratap",30);
 
 const array=[person1,person2,person3];
 const avgAge=Person.averageAge(array); //making static so that it can be called by the Classname.
+console.log(`Avg age of the people is ${avgAge}`);

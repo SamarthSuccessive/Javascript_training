@@ -14,11 +14,11 @@ class Person{
     }
     greeting()
     {
-       return "Hi my name is : "+this.name+"\nAge is "+this.age+"\nGender: "+this.gender+"."+"\nInterest: "+this.gender;
+       return `Hi my name is : ${this.name} \nAge is ${this.age} \nGender: ${this.gender}\nInterest: ${this.interest}`;
     } 
     farewell()
     {
-       return "Goodby "+ this.name;
+       return `Goodby ${this.name}`;
     }
    }
    
@@ -31,7 +31,7 @@ class Person{
     }
     greeting()
     {
-        return "Hi my name is : "+this.name+"\nAge is "+this.age+"\nGender: "+this.gender+"."+"\nInterest: "+this.interest+"\nStudy :"+this.study;
+      return `${super.greeting()} \nStudy:${this.study}`;
 
     }
  }
