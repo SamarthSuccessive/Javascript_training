@@ -2,11 +2,16 @@
 
 
 const resolved=async()=>{
-    await new Promise((resolve,reject)=>{
+    return await new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            console.log("Hello there !!!");
+            resolve("Hello there !!!");
         },2000);
     });
 }
 
-resolved();
+resolved().then((result)=>{
+    console.log(result);
+})
+
+
+
